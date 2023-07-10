@@ -1,6 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export function Header() {
+  const router = useRouter()
+  const { pathname } = router
+  console.log(pathname)
   return (
     <div className="bg-yellow-bg fixed w-full flex justify-between items-center drop-shadow-lg px-20 py-3">
       <div className="flex items-center justify-center gap-12">
@@ -15,18 +20,28 @@ export function Header() {
       </div>
 
       <nav className="flex items-center gap-7 mr-20">
-        <a href="#" className="text-lg font-bold underline underline-offset-8">
+        <Link
+          href="/home"
+          className={`text-lg ${
+            pathname === '/home' && 'font-bold underline underline-offset-8'
+          } `}
+        >
           Home
-        </a>
+        </Link>
         <a href="#" className="text-lg">
           Cardápio
         </a>
         <a href="#" className="text-lg">
-          Modo de preparo
-        </a>
-        <a href="#" className="text-lg">
           Entre em Contato
         </a>
+        <Link
+          href="/recipe"
+          className={`text-lg ${
+            pathname === '/recipe' && 'font-bold underline underline-offset-8'
+          } `}
+        >
+          Modo de preparo
+        </Link>
       </nav>
     </div>
   )
