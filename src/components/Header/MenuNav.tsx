@@ -1,34 +1,25 @@
 import Link from 'next/link'
 
 interface MenuNavProps {
-  nav: boolean
   closeNav: () => void
 }
 
-export function MenuNav({ nav, closeNav }: MenuNavProps) {
+export function MenuNav({ closeNav }: MenuNavProps) {
   return (
-    <nav
-      className={`h-screen overflow-y-hidden overflow-x-hidden w-screen fixed top-0 right-0 flex flex-col justify-center gap-16 items-center  md:hidden  bg-yellow-bg text-gray-600 z-40  text-xl duration-1000
-      `}
-    >
-      <Link
-        onClick={closeNav}
-        href="/home"
-        className="text-2xl text-black
-      "
-      >
+    <nav className="h-screen overflow-y-hidden overflow-x-hidden w-screen fixed top-0 right-0 flex flex-col justify-center gap-16 items-center  md:hidden  bg-yellow-bg z-40  text-2xl duration-1000">
+      <Link onClick={closeNav} href="/home">
         Home
       </Link>
 
-      <a onClick={closeNav} href="#" className="text-2xl text-black">
+      <a onClick={closeNav} href="#">
         Cardápio
       </a>
 
-      <a onClick={closeNav} href="#" className="text-2xl text-black">
+      <a onClick={closeNav} href="#">
         Entre em Contato
       </a>
 
-      <Link onClick={closeNav} href="/recipe" className="text-2xl text-black">
+      <Link onClick={closeNav} href="/recipe">
         Modo de preparo
       </Link>
     </nav>

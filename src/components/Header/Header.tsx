@@ -69,7 +69,7 @@ export function Header() {
         )}
       </div>
 
-      {isModalOpen && <MenuNav closeNav={handletoggleNav} nav={isModalOpen} />}
+      {isModalOpen && <MenuNav closeNav={handletoggleNav} />}
     </div>
   )
 }
