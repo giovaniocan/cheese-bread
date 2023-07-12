@@ -16,19 +16,19 @@ export function Header() {
   }
 
   return (
-    <div className="bg-yellow-bg fixed w-full flex justify-between items-center drop-shadow-lg z-10 px-4 md:px-20 py-3">
+    <header className="bg-yellow-bg fixed w-screen flex justify-between items-center drop-shadow-lg z-10 px-4 lg:px-20 py-3">
       <div className="flex items-center justify-center gap-3 md:gap-12">
         <Image
           alt=""
           src="/logo.svg"
-          width={1}
-          height={1}
-          className="w-28 h-20" // to transform the weight and height to REM
+          width={120}
+          height={80}
+          className="w-28 h-20"
         />
-        <h1 className="md:text-2xl">Maná pão de queijo</h1>
+        <h1 className="text-base md:text-xl lg:text-2xl">Maná pão de queijo</h1>
       </div>
 
-      <nav className="hidden md:flex items-center gap-7 mr-20">
+      <nav className="hidden lg:flex items-center gap-7 mr-20">
         <Link
           href="/home"
           className={`text-lg ${
@@ -53,12 +53,12 @@ export function Header() {
         </Link>
       </nav>
 
-      <div className="transition-transform md:hidden ">
+      <div className="transition-transform lg:hidden">
         {isModalOpen ? (
           <X
             size={45}
             onClick={handletoggleNav}
-            className="fixed z-50 right-4 top-8 text-3xl text-dark md:hidden transition-all"
+            className="fixed z-50 right-4 top-8 text-3xl text-dark lg:hidden transition-all"
           />
         ) : (
           <List
@@ -70,6 +70,6 @@ export function Header() {
       </div>
 
       {isModalOpen && <MenuNav closeNav={handletoggleNav} />}
-    </div>
+    </header>
   )
 }
