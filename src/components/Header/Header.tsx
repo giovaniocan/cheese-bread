@@ -14,9 +14,8 @@ export function Header() {
   function handletoggleNav() {
     setIsModalOpen(!isModalOpen)
   }
-
   return (
-    <header className="bg-yellow-bg fixed w-screen flex justify-between items-center drop-shadow-lg z-10 px-4 lg:px-20 py-3">
+    <header className="bg-yellow-bg fixed w-screen flex justify-between items-center drop-shadow-lg z-10 lg:px-1 xl:px-20 py-3">
       <div className="flex items-center justify-center gap-3 md:gap-12">
         <Image
           alt=""
@@ -31,21 +30,21 @@ export function Header() {
       <nav className="hidden lg:flex items-center gap-7 mr-20">
         <Link
           href="/home"
-          className={`text-lg ${
+          className={`lg:text-xl ${
             pathname === '/home' && 'font-bold underline underline-offset-8'
           } `}
         >
           Home
         </Link>
-        <a href="#" className="text-lg">
+        <a href="#" className=" lg:text-2xl">
           Cardápio
         </a>
-        <a href="#" className="text-lg">
+        <a href="#" className="lg:text-xl">
           Entre em Contato
         </a>
         <Link
           href="/recipe"
-          className={`text-lg ${
+          className={` lg:text-xl ${
             pathname === '/recipe' && 'font-bold underline underline-offset-8'
           } `}
         >

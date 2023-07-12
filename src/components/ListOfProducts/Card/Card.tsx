@@ -20,15 +20,12 @@ export function Card({ product }: CardProps) {
 
   return (
     <>
-      <div
-        onClick={openModal}
-        className="bg-slate-50  w-72 flex flex-col justify-between gap-4 px-7 pb-4 border rounded-3xl shadow-3xl"
-      >
+      <div className="bg-slate-50  w-72 flex flex-col justify-between gap-4 px-7 pb-4 border rounded-3xl shadow-3xl">
         <Image
           src={product.image}
           alt={product.name}
-          width={1}
-          height={1}
+          width={256}
+          height={288}
           className="w-64 h-72"
         />
         <div className="flex flex-col gap-4">
@@ -41,7 +38,10 @@ export function Card({ product }: CardProps) {
             {product.weight}
           </span>
 
-          <button className="w-full bg-red-bg-button text-white py-2 rounded-full font-medium uppercase">
+          <button
+            onClick={openModal}
+            className="w-full bg-red-bg-button text-white py-2 rounded-full font-medium uppercase"
+          >
             saiba mais
           </button>
         </div>
