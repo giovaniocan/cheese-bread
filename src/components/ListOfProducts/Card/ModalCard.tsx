@@ -13,12 +13,11 @@ interface ModalCardProps {
 
 export function ModalCard({ isOpen, onRequestClose, product }: ModalCardProps) {
   function SendMessage() {
-    const mensagem = `Olá, gostaria de comprar o produto '${product.name}'.`
+    const message = `Olá, gostaria de comprar o produto '${product.name}'.`
 
-    const mensagemCodificada = encodeURIComponent(mensagem)
-    console.log(mensagemCodificada)
+    const formatedMessage = encodeURIComponent(message)
 
-    return mensagemCodificada
+    return formatedMessage
   }
 
   const mensagem = SendMessage()
