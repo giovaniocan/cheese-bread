@@ -22,7 +22,7 @@ export function Card({ product }: CardProps) {
     <>
       <div
         onClick={openModal}
-        className="bg-slate-50 w-72 flex flex-col justify-between gap-4 px-7 pb-4 border rounded-3xl shadow-3xl"
+        className="bg-slate-50  w-72 flex flex-col justify-between gap-4 px-7 pb-4 border rounded-3xl shadow-3xl"
       >
         <Image
           src={product.image}

@@ -16,7 +16,7 @@ export function Header() {
   }
 
   return (
-    <div className="bg-yellow-bg fixed w-full flex justify-between items-center drop-shadow-lg z-50 px-4 md:px-20 py-3">
+    <div className="bg-yellow-bg fixed w-full flex justify-between items-center drop-shadow-lg z-10 px-4 md:px-20 py-3">
       <div className="flex items-center justify-center gap-3 md:gap-12">
         <Image
           alt=""
