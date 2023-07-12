@@ -31,12 +31,14 @@ export function Header() {
         <Link
           href="/home"
           className={`lg:text-xl ${
-            pathname === '/home' && 'font-bold underline underline-offset-8'
-          } `}
+            pathname === '/home' || pathname === '/'
+              ? 'font-bold underline underline-offset-8'
+              : ''
+          }`}
         >
           Home
         </Link>
-        <a href="#" className=" lg:text-2xl">
+        <a href="#" className=" lg:text-xl">
           Cardápio
         </a>
         <a href="#" className="lg:text-xl">
