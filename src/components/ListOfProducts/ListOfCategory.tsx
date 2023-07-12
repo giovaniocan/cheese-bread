@@ -18,7 +18,7 @@ export function ListOfCategory({ products, title }: ListOfCategoryProps) {
   return (
     <div className="flex flex-col gap-16 text-center">
       <h1 className="text-5xl font-semibold">{title}</h1>
-      <div className="flex flex-col items-center md:flex-row gap-20 justify-between">
+      <div className="flex flex-wrap items-center justify-center  md:flex-row gap-20 ">
         {products.map((product) => {
           return <Card key={product.id} product={product} />
         })}
