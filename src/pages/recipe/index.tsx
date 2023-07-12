@@ -1,5 +1,4 @@
-import { Header } from '@/components/Header/Header'
-import { Intro } from '@/components/Intro/Intro'
+import { Header } from '@/components/Header'
 
 export default function Recipe() {
   return (

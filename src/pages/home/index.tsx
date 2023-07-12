@@ -1,6 +1,7 @@
-import { Contatc } from '@/components/Contatc/Contact'
-import { Header } from '@/components/Header/Header'
-import { Intro } from '@/components/Intro/Intro'
+import { Contatc } from '@/components/Contatc'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
+import { Intro } from '@/components/Intro'
 import { List } from '@/components/ListOfProducts/List'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Intro />
       <List />
       <Contatc />
+      <Footer />
     </div>
   )
 }
