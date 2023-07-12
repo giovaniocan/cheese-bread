@@ -1,9 +1,9 @@
-import { on } from 'events'
 import { ProductCard } from '../ListOfCategory'
 
 import ReactModal from 'react-modal'
 import { X } from 'phosphor-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface ModalCardProps {
   isOpen: boolean
@@ -12,6 +12,17 @@ interface ModalCardProps {
 }
 
 export function ModalCard({ isOpen, onRequestClose, product }: ModalCardProps) {
+  function SendMessage() {
+    const mensagem = `Olá, gostaria de comprar o produto '${product.name}'.`
+
+    const mensagemCodificada = encodeURIComponent(mensagem)
+    console.log(mensagemCodificada)
+
+    return mensagemCodificada
+  }
+
+  const mensagem = SendMessage()
+
   return (
     <ReactModal
       isOpen={isOpen}
@@ -19,7 +30,7 @@ export function ModalCard({ isOpen, onRequestClose, product }: ModalCardProps) {
       onRequestClose={onRequestClose}
       contentLabel="Modal of product card"
       overlayClassName="fixed inset-0 flex items-center justify-center -mb-10 bg-black/80 "
-      className=" relative pt-10 pb-4 px-4 bg-white border-1 shadow-3xl rounded-lg  mx-4 w-full md:w-2/3 lg:w-1/3 lg:p-10 dark:bg-zinc-900 dark:border"
+      className=" relative pt-10 pb-4 px-4 bg-white border-1 shadow-3xl rounded-xl  mx-4 w-full md:w-2/3 lg:w-1/3 lg:p-10 dark:bg-zinc-900 dark:border"
     >
       <button onClick={onRequestClose} className="absolute top-4 right-4">
         <X size={28} weight="bold" />
@@ -49,9 +60,12 @@ export function ModalCard({ isOpen, onRequestClose, product }: ModalCardProps) {
             Pacotes com {product.weight}
           </span>
 
-          <button className="w-full bg-green-bg-button text-black py-4 text-base md:text-xl rounded-full font-semibold uppercase">
+          <Link
+            href={`https://api.whatsapp.com/send?phone=44998204301&text=${mensagem}`}
+            className="w-full bg-green-bg-button text-black py-4 text-base md:text-xl text-center rounded-full font-semibold uppercase"
+          >
             Entre em contato e peça agora
-          </button>
+          </Link>
         </div>
       </div>
     </ReactModal>
