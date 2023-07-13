@@ -1,5 +1,6 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
+import Image from 'next/image'
 
 interface Slide {
   id: number
@@ -32,7 +33,7 @@ export function CardCarousel({ src }: SimpleCarouselProps) {
           key={slide.id}
           className="carousel-slide flex justify-center items-center flex-col "
         >
-          <img
+          <Image
             src={slide.src}
             alt={slide.alt}
             className="max-h-300 object-contain"
