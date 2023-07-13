@@ -1,4 +1,4 @@
-import { SimpleCarousel } from '../Carousel'
+import { IntroCarousel } from '../Carousel/IntroCarousel'
 
 export function Intro() {
   const photos = ['carousel1.jpg', 'carousel2.jpg']
@@ -13,7 +13,7 @@ export function Intro() {
       </div>
 
       <div className="mx-1 md:3/5 lg:w-2/3 lg:m-0 md:m-10 ">
-        <SimpleCarousel src={photos} />
+        <IntroCarousel src={photos} />
       </div>
     </div>
   )

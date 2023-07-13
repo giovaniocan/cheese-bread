@@ -12,11 +12,10 @@ interface SimpleCarouselProps {
   src: string[]
 }
 
-export function SimpleCarousel({ src }: SimpleCarouselProps) {
-  const slides: Slide[] = [
-    { id: 1, src: 'carousel1.jpg', alt: 'Slide 1' },
-    { id: 2, src: 'carousel2.jpg', alt: 'Slide 2' },
-  ]
+export function IntroCarousel({ src }: SimpleCarouselProps) {
+  const slides: Slide[] = src.map((src, index) => {
+    return { id: index + 1, src, alt: `Slide ${index + 1}` }
+  })
 
   return (
     <Carousel
