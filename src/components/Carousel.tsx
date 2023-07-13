@@ -8,7 +8,11 @@ interface Slide {
   caption?: string
 }
 
-export function SimpleCarousel() {
+interface SimpleCarouselProps {
+  src: string[]
+}
+
+export function SimpleCarousel({ src }: SimpleCarouselProps) {
   const slides: Slide[] = [
     { id: 1, src: 'carousel1.jpg', alt: 'Slide 1' },
     { id: 2, src: 'carousel2.jpg', alt: 'Slide 2' },
@@ -29,7 +33,7 @@ export function SimpleCarousel() {
       {slides.map((slide) => (
         <div
           key={slide.id}
-          className="carousel-slide bg-gray-200 flex justify-center items-center flex-col h-400"
+          className="carousel-slide bg-gray-200 flex justify-center items-center flex-col "
         >
           <img
             src={slide.src}
