@@ -27,7 +27,7 @@ export function IntroCarousel({ src }: SimpleCarouselProps) {
       showStatus={false}
       stopOnHover
       swipeable
-      className="max-w-800 mx-auto"
+      className="max-w-800 mx-auto "
     >
       {slides.map((slide) => (
         <div

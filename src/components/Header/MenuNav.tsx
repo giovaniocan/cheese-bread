@@ -6,7 +6,7 @@ interface MenuNavProps {
 
 export function MenuNav({ closeNav }: MenuNavProps) {
   return (
-    <nav className="h-screen overflow-y-hidden overflow-x-hidden w-screen fixed z-40 top-0 right-0 flex flex-col justify-center gap-16 items-center md:hidden bg-yellow-bg text-2xl duration-1000">
+    <nav className="h-screen overflow-y-hidden overflow-x-hidden w-screen fixed z-10 top-0 right-0 flex flex-col justify-center gap-16 items-center md:hidden bg-yellow-bg text-2xl duration-1000">
       <Link onClick={closeNav} href="/home">
         Home
       </Link>

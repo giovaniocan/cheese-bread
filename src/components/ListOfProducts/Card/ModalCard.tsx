@@ -29,7 +29,7 @@ export function ModalCard({ isOpen, onRequestClose, product }: ModalCardProps) {
       onRequestClose={onRequestClose}
       contentLabel="Modal of product card"
       overlayClassName="fixed inset-0 flex items-center justify-center -mb-10 bg-black/80 "
-      className=" relative pt-10 pb-4 px-4 bg-white border-1 shadow-3xl rounded-xl  mx-4 w-full md:w-2/3 lg:w-1/3 lg:p-10 dark:bg-zinc-900 dark:border"
+      className="z-50 relative pt-10 pb-4 px-4 bg-white border-1 shadow-3xl rounded-xl  mx-4 w-full md:w-2/3 lg:w-1/3 lg:p-10 dark:bg-zinc-900 dark:border"
     >
       <button onClick={onRequestClose} className="absolute top-4 right-4">
         <X size={28} weight="bold" />

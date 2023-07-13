@@ -19,8 +19,6 @@ export function Card({ product }: CardProps) {
     setIsmodalOpen(false)
   }
 
-  const carouselImages = [`${product.image}`]
-
   return (
     <>
       <div className="bg-slate-50  w-72 flex flex-col justify-between gap-4 px-7 pb-4 border rounded-3xl shadow-3xl">

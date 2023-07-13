@@ -15,7 +15,7 @@ export function Header() {
     setIsModalOpen(!isModalOpen)
   }
   return (
-    <header className="bg-yellow-bg fixed w-screen flex justify-between items-center drop-shadow-lg z-10 px-2 lg:px-1 xl:px-20 py-3">
+    <header className="bg-yellow-bg fixed w-screen flex justify-between items-center drop-shadow-lg px-2 lg:px-1 xl:px-20 py-3">
       <div className="flex items-center justify-center gap-3 md:gap-12">
         <Image
           alt=""

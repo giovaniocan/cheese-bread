@@ -26,7 +26,7 @@ export function CardCarousel({ src }: SimpleCarouselProps) {
       showStatus={false}
       stopOnHover
       swipeable
-      className="max-w-800 mx-auto"
+      className="max-w-800 z-20 mx-auto"
     >
       {slides.map((slide) => (
         <div

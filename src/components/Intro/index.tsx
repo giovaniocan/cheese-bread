@@ -3,7 +3,7 @@ import { IntroCarousel } from '../Carousel/IntroCarousel'
 export function Intro() {
   const photos = ['carousel1.jpg', 'carousel2.jpg']
   return (
-    <div className="mt-36 px-10   w-full flex flex-col-reverse items-center  lg:flex-row justify-around gap-8 font-semibold  ">
+    <div className="mt-36 px-10 -z-10  w-full flex flex-col-reverse items-center  lg:flex-row justify-around gap-8 font-semibold  ">
       <div className="flex text-center md:m-10   text-2xl md:text-3xl  xl:text-6xl">
         <h2>
           Descubra o sabor autêntico e irresistível do{' '}
