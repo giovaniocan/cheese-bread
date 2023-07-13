@@ -4,6 +4,7 @@ export interface ProductCard {
   id: number
   name: string
   image: string
+  carouselImage: string | null
   shortDescription: string
   longDescription: string
   weight: string

@@ -2,12 +2,22 @@ import Pote1Kg from '../../public/products/pote1Kg.svg'
 import balde4Kg from '../../public/products/balde4Kg.svg'
 
 import pqCongelado25 from '../../public/products/congelado25.svg'
+import packCongelado25 from '../../public/products/packCongelado25.svg'
+
 import pqCongelado50 from '../../public/products/congelado50.svg'
+import packCongelado50 from '../../public/products/packCongelado50.svg'
+
 import pqCongelado85 from '../../public/products/congelado85.svg'
+import packCongelado85 from '../../public/products/packCongelado85.svg'
 
 import chipaTradicional from '../../public/products/chipaTradicional.svg'
+import packChipaTradicional from '../../public/products/packChipaTradicional.svg'
+
 import chipaTemperada from '../../public/products/chipaTemperada.svg'
+import packChipaTemperada from '../../public/products/packChipaTemperada.svg'
+
 import chipaPalito from '../../public/products/chipaPalito.svg'
+import packChipaPalito from '../../public/products/packChipaPalito.svg'
 
 export const Cards = [
   {
@@ -18,6 +28,7 @@ export const Cards = [
         id: 1,
         name: 'Pão de Queijo de Pote 1 Kg',
         image: Pote1Kg,
+        carouselImage: null,
         shortDescription:
           'Delicie-se com nosso pão de queijo de pote de 1kg. Sabor irresistível e praticidade em uma única opção.',
         longDescription:
@@ -29,6 +40,7 @@ export const Cards = [
         id: 2,
         name: 'Pão de Queijo de Balde 4 Kg',
         image: balde4Kg,
+        carouselImage: null,
         shortDescription:
           'Praticidade do nosso pão de queijo de pote de 4kg. Sabor excepcional em uma opção em abundância.',
         longDescription:
@@ -46,6 +58,7 @@ export const Cards = [
         id: 1,
         name: 'Pão de queijo congelado - 25g',
         image: Pote1Kg,
+        carouselImage: packCongelado25,
         shortDescription:
           ' Sabor irresistível para lanches rápidos e deliciosos.',
         longDescription:
@@ -57,6 +70,7 @@ export const Cards = [
         id: 2,
         name: 'Pão de queijo congelado - 50g',
         image: pqCongelado50,
+        carouselImage: packCongelado50,
         shortDescription: 'Sabor autêntico para qualquer momento do dia.',
         longDescription:
           'Desfrute do sabor autêntico que vai tornar qualquer momento do seu dia ainda mais especial. Uma experiência deliciosa que pode ser apreciada a qualquer hora, seja no café da manhã, no almoço ou no jantar.',
@@ -67,6 +81,7 @@ export const Cards = [
         id: 3,
         name: 'Pão de queijo congelado - 85g',
         image: pqCongelado85,
+        carouselImage: packCongelado85,
         shortDescription:
           'Textura macia e aroma delicioso para eventos especiais.',
         longDescription:
@@ -84,6 +99,7 @@ export const Cards = [
         id: 1,
         name: 'Chipa sabor tradicional',
         image: chipaTradicional,
+        carouselImage: packChipaTradicional,
         shortDescription:
           'Sabor autêntico e irresistível, perfeito para todos.',
         longDescription:
@@ -95,6 +111,7 @@ export const Cards = [
         id: 2,
         name: 'Chipa temperada',
         image: chipaTemperada,
+        carouselImage: packChipaTemperada,
         shortDescription: 'Explosão de sabores especiais e irresistíveis.',
         longDescription:
           'Deixe-se envolver por uma explosão de sabores especiais e irresistíveis que vão despertar seus sentidos. Uma combinação perfeita de ingredientes.',
@@ -105,6 +122,7 @@ export const Cards = [
         id: 3,
         name: 'Chipa tradicional palito',
         image: chipaPalito,
+        carouselImage: packChipaPalito,
         shortDescription: 'Sabor clássico em formato prático e delicioso.',
         longDescription:
           'Desfrute do sabor clássico em um formato prático e delicioso, que une tradição e praticidade em cada mordida. Uma opção irresistível que proporciona uma experiência memorável.',
