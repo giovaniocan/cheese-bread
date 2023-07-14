@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { ProductCard } from '../ListOfCategory'
 import { ModalCard } from './ModalCard'
 import { useState } from 'react'
-import { CardCarousel } from '@/components/Carousel/CardCarousel'
 
 interface CardProps {
   product: ProductCard
