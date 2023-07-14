@@ -23,17 +23,13 @@ export function Card({ product }: CardProps) {
     <>
       <div className="bg-slate-50  w-72 flex flex-col justify-between gap-4 px-7 pb-4 border rounded-3xl shadow-3xl">
         <div className="max-w-72  m-4 h-72 flex items-center object-center justify-center">
-          {product.carouselImage ? (
-            <CardCarousel src={[product.image, product.carouselImage]} />
-          ) : (
-            <Image
-              src={product.image}
-              alt={product.name}
-              width={1}
-              height={1}
-              className="w-64 h-72"
-            />
-          )}
+          <Image
+            src={product.image}
+            alt={product.name}
+            width={1}
+            height={1}
+            className="w-64 h-72"
+          />
         </div>
 
         <div className="flex flex-col gap-4">
@@ -47,14 +43,16 @@ export function Card({ product }: CardProps) {
           </span>
 
           <button
+            type="button"
             onClick={openModal}
-            className="w-full bg-red-bg-button text-white py-2 rounded-full font-medium uppercase"
+            className="w-full  bg-red-bg-button text-white py-2 rounded-full font-medium uppercase"
           >
             saiba mais
           </button>
         </div>
       </div>
       <ModalCard
+        key={product.id}
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         product={product}
