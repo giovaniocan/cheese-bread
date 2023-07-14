@@ -5,8 +5,8 @@ export function RecipeIntro() {
         <h2>
           Preparar <span className="text-yellow-400">chipa</span> e{' '}
           <span className="text-yellow-400">pão de queijo</span> fresquinho e
-          saboroso nunca foi tão fácil! Aprenda os passos essenciais para criar
-          essa iguaria brasileira amada por todos.
+          saboroso nunca foi tão fácil! Aprenda os passos essenciais para
+          preparar essa iguaria brasileira amada por todos.
         </h2>
       </div>
     </div>

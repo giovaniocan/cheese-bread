@@ -29,4 +29,7 @@ export const Recipes = [
   },
 ]
 
-export const Notes = ['Não assar em microondas.', 'Não precisa descongelar.']
+export const NotesofRecipes = [
+  'Não assar em microondas.',
+  'Não precisa descongelar.',
+]
