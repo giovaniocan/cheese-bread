@@ -6,7 +6,9 @@ export function Contatc() {
     <div id="contact" className="ml-6 md:ml-48 flex flex-col gap-24 ">
       <div className="flex  gap-6 items-center">
         <Phone size={60} weight="bold" />
-        <h1 className="text-5xl font-semibold">Contato</h1>
+        <h1 className="text-xl md:text-2xl lg:text-5xl font-semibold">
+          Contato
+        </h1>
       </div>
       <div className="mr-3 flex items-center gap-4 flex-wrap lg:justify-around">
         <div className="flex gap-4">
