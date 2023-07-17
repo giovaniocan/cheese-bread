@@ -3,7 +3,7 @@ import { Phone } from 'phosphor-react'
 
 export function Contatc() {
   return (
-    <div className="ml-6 md:ml-48 flex flex-col gap-24 ">
+    <div id="contact" className="ml-6 md:ml-48 flex flex-col gap-24 ">
       <div className="flex  gap-6 items-center">
         <Phone size={60} weight="bold" />
         <h1 className="text-5xl font-semibold">Contato</h1>

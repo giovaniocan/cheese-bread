@@ -38,10 +38,10 @@ export function Header() {
         >
           Home
         </Link>
-        <a href="#" className=" lg:text-xl">
+        <a href="#menu" className=" lg:text-xl">
           Cardápio
         </a>
-        <a href="#" className="lg:text-xl">
+        <a href="#contact" className="lg:text-xl">
           Entre em Contato
         </a>
         <Link
