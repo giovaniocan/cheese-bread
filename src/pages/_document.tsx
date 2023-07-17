@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html className="scroll-smooth" lang="en">
       <Head />
+      <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       <body>
         <Main />
         <NextScript />
