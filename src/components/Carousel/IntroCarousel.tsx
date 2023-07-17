@@ -25,6 +25,7 @@ export function IntroCarousel({ src }: SimpleCarouselProps) {
       infiniteLoop
       showThumbs={false}
       showStatus={false}
+      showArrows={false}
       stopOnHover
       swipeable
       className="max-w-800 mx-auto "
