@@ -57,7 +57,7 @@ export const Cards = [
       {
         id: 1,
         name: 'Pão de queijo congelado - 25g',
-        image: Pote1Kg,
+        image: pqCongelado25,
         carouselImage: packCongelado25,
         shortDescription:
           ' Sabor irresistível para lanches rápidos e deliciosos.',

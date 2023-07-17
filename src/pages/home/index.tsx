@@ -1,8 +1,8 @@
-import { Contatc } from '@/components/Contatc'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Intro } from '@/components/Intro'
 import { List } from '@/components/ListOfProducts/List'
+import { Contatc } from '@/components/Contatc'
 
 export default function Home() {
   return (
