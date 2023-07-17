@@ -69,7 +69,7 @@ export function ModalCard({ isOpen, onRequestClose, product }: ModalCardProps) {
           </span>
 
           <Link
-            href={`https://api.whatsapp.com/send?phone=44998204301&text=${mensagem}`}
+            href={`https://api.whatsapp.com/send?phone=4498444524&text=${mensagem}`}
             className="w-full bg-green-bg-button text-black py-4 text-base md:text-xl text-center rounded-full font-semibold uppercase"
           >
             Entre em contato e peça agora
