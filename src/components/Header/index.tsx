@@ -14,6 +14,9 @@ export function Header() {
   function handletoggleNav() {
     setIsModalOpen(!isModalOpen)
   }
+
+  const isFirstPage = pathname === '/home' || pathname === '/'
+
   return (
     <header className="bg-yellow-bg z-0 fixed w-screen flex justify-between items-center drop-shadow-lg px-2 lg:px-1 xl:px-20 py-3">
       <div className="flex items-center justify-center gap-3 md:gap-12">
@@ -38,17 +41,30 @@ export function Header() {
         >
           Home
         </Link>
-        <a href="#menu" className=" lg:text-xl">
-          Cardápio
-        </a>
-        <a href="#contact" className="lg:text-xl">
-          Entre em Contato
-        </a>
+        {isFirstPage ? (
+          <>
+            <a href="#menu" className="lg:text-xl">
+              Cardápio
+            </a>
+            <a href="#contact" className="lg:text-xl">
+              Entre em Contato
+            </a>
+          </>
+        ) : (
+          <>
+            <Link href="/#menu" className="lg:text-xl">
+              Cardápio
+            </Link>
+            <Link href="/#contact" className="lg:text-xl">
+              Entre em Contato
+            </Link>
+          </>
+        )}
         <Link
           href="/recipe"
-          className={` lg:text-xl ${
+          className={`lg:text-xl ${
             pathname === '/recipe' && 'font-bold underline underline-offset-8'
-          } `}
+          }`}
         >
           Modo de preparo
         </Link>
