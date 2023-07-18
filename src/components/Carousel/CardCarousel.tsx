@@ -56,7 +56,7 @@ export function CardCarousel({ src }: SimpleCarouselProps) {
       {slides.map((slide) => (
         <div
           key={slide.id}
-          className="carousel-slide flex justify-center items-center flex-col"
+          className="carousel-slide flex justify-center items-center lg:h-5/6 flex-col"
         >
           <Image src={slide.src} alt={slide.alt} className=" object-contain " />
           {slide.caption && (
