@@ -25,7 +25,7 @@ export function Header() {
           src="/logo.svg"
           width={120}
           height={80}
-          className="w-28 h-20"
+          className="w-24 h-16"
         />
         <h1 className="text-base md:text-xl lg:text-2xl">Maná pão de queijo</h1>
       </div>
