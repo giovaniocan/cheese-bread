@@ -43,7 +43,7 @@ export function ModalCard({ isOpen, onRequestClose, product }: ModalCardProps) {
             {product.name}
           </h2>
 
-          <div className="w-60 md:w-64  lg:w-72 xl:w-80 m-4 flex items-center object-center justify-center">
+          <div className="w-56 md:w-64  lg:w-72 xl:w-80 m-4 flex items-center object-center justify-center">
             {product.carouselImage ? (
               <div className="relative lg:w-5/6 2xl:w-full ">
                 <CardCarousel src={[product.image, product.carouselImage]} />
