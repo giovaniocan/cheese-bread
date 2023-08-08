@@ -89,7 +89,7 @@ export function Header() {
           <X
             size={45}
             onClick={handletoggleNav}
-            className="fixed z-50 right-4 top-8 text-3xl text-dark lg:hidden transition-all"
+            className="fixed z-50 right-2 top-6 text-3xl text-dark lg:hidden transition-all"
           />
         ) : (
           <List size={45} onClick={handletoggleNav} />
