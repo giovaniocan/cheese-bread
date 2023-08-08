@@ -20,7 +20,7 @@ export function IntroCarousel({ src }: SimpleCarouselProps) {
   return (
     <Carousel
       autoPlay
-      interval={10000}
+      interval={5000}
       transitionTime={1000}
       infiniteLoop
       showThumbs={false}
