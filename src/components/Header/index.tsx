@@ -33,40 +33,54 @@ export function Header() {
       <nav className="hidden lg:flex items-center gap-7 mr-20">
         <Link
           href="/home"
-          className={`lg:text-xl ${
+          className={`lg:text-xl  ${
             pathname === '/home' || pathname === '/'
               ? 'font-bold underline underline-offset-8'
-              : ''
+              : 'relative group'
           }`}
         >
           Home
+          <span className="absolute -bottom-1 left-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
+          <span className="absolute -bottom-1 right-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
         </Link>
         {isFirstPage ? (
           <>
-            <a href="#menu" className="lg:text-xl">
+            <a href="#menu" className="lg:text-xl relative group ">
               Cardápio
+              <span className="absolute -bottom-1 left-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
+              <span className="absolute -bottom-1 right-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
             </a>
-            <a href="#contact" className="lg:text-xl">
+            <a href="#contact" className="lg:text-xl relative group ">
               Entre em Contato
+              <span className="absolute -bottom-1 left-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
+              <span className="absolute -bottom-1 right-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
             </a>
           </>
         ) : (
           <>
-            <Link href="/#menu" className="lg:text-xl">
+            <Link href="/#menu" className="lg:text-xl relative group ">
               Cardápio
+              <span className="absolute -bottom-1 left-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
+              <span className="absolute -bottom-1 right-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
             </Link>
-            <Link href="/#contact" className="lg:text-xl">
+            <Link href="/#contact" className="lg:text-xl relative group ">
               Entre em Contato
+              <span className="absolute -bottom-1 left-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
+              <span className="absolute -bottom-1 right-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
             </Link>
           </>
         )}
         <Link
           href="/recipe"
-          className={`lg:text-xl ${
-            pathname === '/recipe' && 'font-bold underline underline-offset-8'
+          className={`lg:text-xl  ${
+            pathname === '/recipe'
+              ? 'font-bold underline underline-offset-8'
+              : 'relative group'
           }`}
         >
           Modo de preparo
+          <span className="absolute -bottom-1 left-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
+          <span className="absolute -bottom-1 right-1/2 w-0 h-[calc(4px-2px)] bg-black group-hover:w-1/2 group-hover:transition-all duration-500"></span>
         </Link>
       </nav>
 
