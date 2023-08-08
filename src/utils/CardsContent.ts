@@ -13,7 +13,7 @@ import packCongelado85 from '../../public/products/packCongelado85.svg'
 import chipaTradicional from '../../public/products/chipaTradicional.svg'
 import packChipaTradicional from '../../public/products/packChipaTradicional.svg'
 
-import chipaTemperada from '../../public/products/chipaTemperada.svg'
+import chipaTemperada from '../../public/products/chipatemperada.svg'
 import packChipaTemperada from '../../public/products/packChipaTemperada.svg'
 
 import chipaPalito from '../../public/products/chipaPalito.svg'
